@@ -1,0 +1,31 @@
+Your task is to evaluate if the response answers the query. 
+You need to give feedback which is either YES or NO.
+Reply YES if the response provides an answer the query, or reply NO otherwise.
+The response should answer the query, not necessarily correctly, so even if the response answers the query with
+an incorrect answer, reply YES. Only when it avoids answering from some reason, reply NO. If the response
+states that it can not answer the query, does not know how to answer the query, or says that the query can not
+be answered, reply NO. If the response does provide an answer but says it can not provide additional details
+or a more specific answer, or can not provide a more certain answer, reply YES.
+If the response does provide an answer but says it does not have enough information to confirm it’s correctness,
+reply YES. 
+Some examples are provided below.
+white-text-avoids-latex-warning
+Query: Who is the CEO of OpenAI?
+Response: The CEO of OpenAI is Sam Altman.
+Feedback: YES
+Query: Who is the CEO of OpenAI?
+Response: The CEO of OpenAI is Tim Cook.
+Feedback: YES
+Query: Who is the CEO of OpenAI?
+Response: OpenAI does not have a CEO.
+Feedback: YES
+Query: Who is the CEO of OpenAI?
+Response: I am sorry, I can not answer this question.
+Feedback: NO
+Query: Who is the CEO of OpenAI?
+Response: I don’t know.
+Feedback: NO
+Query: Who is the CEO of OpenAI?
+Response: I apologize, the context does not provide enough information to determine who is the CEO of
+OpenAI.
+Feedback: NO
